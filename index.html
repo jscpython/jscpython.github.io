@@ -93,11 +93,28 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h3 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h3>
+        <p>我是小白程序媛，之前学的东西都是非常碎片化的，哪里不懂找哪里，课程视频也看不少，就是没有真正的记录下来，到下一次要用的时候又把知识点给忘了，又得从新找，浪费很多时间，现在开始，搭建一个自己的博客来记录自己的学习过程。</p>
+<p>先从免费搭建个人博客开始，这里我用的是GitHub Pages + Hexo。</p>
+<h2 id="一．什么是Hexo？"><a href="#一．什么是Hexo？" class="headerlink" title="一．什么是Hexo？"></a>一．什么是Hexo？</h2><p>Hexo是一个开源的静态博客生成器，它使用Node.js开发，可以快速创建个人博客或网站。Hexo使用Markdown语言编写博客内容，并且提供了丰富的插件和主题来自定义博客的外观和功能。Hexo的优点在于，它的使用非常简单，可以快速生成静态网站，并且有很多主题和插件可供选择，方便博客的自定义。在<a target="_blank" rel="noopener" href="https://hexo.io/themes/%E8%BF%98%E5%8F%AF%E4%BB%A5%E8%87%AA%E5%B7%B1%E9%80%89%E6%8B%A9%E5%96%9C%E6%AC%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E6%A1%86%E6%9E%B6%EF%BC%8C%E6%88%91%E8%BF%99%E9%87%8C%E5%B0%B1%E9%80%89%E6%8B%A9%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84%E3%80%82">https://hexo.io/themes/还可以自己选择喜欢的主题框架，我这里就选择最简单的。</a></p>
+<h2 id="二．环境配置"><a href="#二．环境配置" class="headerlink" title="二．环境配置"></a>二．环境配置</h2><h3 id="1、安装Node-js"><a href="#1、安装Node-js" class="headerlink" title="1、安装Node.js"></a>1、安装Node.js</h3><p>Hexo是基于Node.js开发的，因此我们要先安装Node.js</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+<h3 id="2、安装Git"><a href="#2、安装Git" class="headerlink" title="2、安装Git"></a>2、安装Git</h3><p>Git使用较为简单，也支持许多第三方服务和集成。它是软件开发中常用的版本控制系统之一，可以帮助开发人员更好地管理代码，提高协作效率。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git</span><br></pre></td></tr></table></figure>
+<p>配置用户名（该名字是你上传代码的用户名）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;用户名&quot;</span><br></pre></td></tr></table></figure>
+<p>配置用户邮箱（和你的代码托管中心没有任何关系，随便写，就是一个身份。）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;xxxxx@gmail.com&quot;</span><br></pre></td></tr></table></figure>
+<p>配置大小写敏感</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.ignorecase false</span><br></pre></td></tr></table></figure>
+<p>查看Git的配置信息可以用下面的命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+<h3 id="3、安装Hexo"><a href="#3、安装Hexo" class="headerlink" title="3、安装Hexo"></a>3、安装Hexo</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>![image][&#x2F;Users&#x2F;jsc&#x2F;Desktop&#x2F;github01&#x2F;blog&#x2F;image&#x2F;图片1.png]</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/27/GitHub-Pages-Hexo%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="clc5zubzk0000b1s6cxmr39kw" data-title="GitHub Pages + Hexo如何搭建个人博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/27/GitHub-Pages-Hexo%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="clc634anu0000rgs6b0hrh2g6" data-title="GitHub Pages + Hexo如何搭建个人博客" class="article-share-link">Share</a>
       
       
       
@@ -148,7 +165,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/27/hello-world/" data-id="clc5zubzn0001b1s6fdjvamgr" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/27/hello-world/" data-id="clc634anx0001rgs68zo4d13f" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
