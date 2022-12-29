@@ -95,7 +95,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/12/28/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAwordpress/">如何本地搭建WordPress</a>
+      <a class="p-name article-title" href="/2022/12/28/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAwordpress/">Mac本地搭建WordPress</a>
     </h1>
   
 
@@ -104,13 +104,24 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>對於網站CMS來說，個人覺得WordPress對於新手最為友好，它是一個內容管理系統 (CMS)，允許用戶輕鬆創建和管理網站。它是一個開源平台，這意味著源代碼可供任何人使用和修改。 WordPress 很受歡迎，因為它易於使用，並且擁有龐大的用戶和開發人員社區，他們為其持續發展做出了貢獻。使用 WordPress，用戶無需知道如何編碼即可創建和管理網站。它提供一系列功能和工具，包括模板和插件，以幫助用戶定制他們的網站並添加聯繫表格、電子商務功能等功能。 WordPress 可用於創建各種各樣的網站，包括博客、商業網站、電子商務商店等。</p>
-<p>本地搭建WordPress有兩種方式，方式一是用PHPStudy，方式二是本地安裝LNMP&#x2F;LAMP，今天先學習最簡單方便的PHPStudy。</p>
-<p>PHPStudy 是一個免費、開源的 PHP 集成開發環境 (IDE)。它是一個軟件應用程序，提供了一系列用於開發和調試 PHP 代碼的工具和功能。 PHPStudy 包括一個用於編寫代碼的文本編輯器、一個用於查找和修復錯誤的調試器以及一個用於在本地測試代碼的內置 Web 服務器。它還包括對其他語言的支持，例如 HTML、CSS 和 JavaScript。 PHPStudy 旨在易於使用，具有簡單的界面和直接的工具。它經常被想要在本地環境中學習和練習編碼的 PHP 編程初學者使用。</p>
-<h2 id="一、安裝PHPStudy"><a href="#一、安裝PHPStudy" class="headerlink" title="一、安裝PHPStudy"></a>一、安裝PHPStudy</h2><p>官網：<a target="_blank" rel="noopener" href="https://www.xp.cn/">https://www.xp.cn/</a></p>
-<p>根據自己的操作系統選擇下載</p>
+<p>本地搭建WordPress有兩種方式，方式一是用PHPStudy，方式二是本地安裝LNMP&#x2F;LAMP，今天先學習用最簡單方便的集成環境搭建，以前用Windows系統的時候用PHPstudy最好用，但是在Mac上就會出現很多問題，例如WordPress需要PHP7.4的版本，PHPstudy的Mac版本卻沒有PHP7.4，因此我選擇了MAMP。</p>
+<p>MAMP 是一個集成環境軟件包，可為 macOS 和 Windows 上的 Web 開發人員提供本地開發環境。它代表“Macintosh、Apache、MySQL 和 PHP”，包括以下組件：<br>Apache：流行的開源網絡服務器軟件<br>MySQL：流行的開源數據庫管理系統<br>PHP：一種用於 Web 開發的流行開源編程語言<br>MAMP 允許開發人員在他們自己的計算機上本地測試他們的網站和應用程序，而無需互聯網連接或實時 Web 服務器。這可用於測試和調試目的，或用於離線開發網站和應用程序。<br>要使用 MAMP，您需要將其安裝在您的計算機上並設置 Web 服務器和數據庫。然後，您可以使用 MAMP 創建和管理您的 Web 項目，並通過本地計算機上的 Web 瀏覽器訪問它們。</p>
+<h2 id="一、安裝MAMP"><a href="#一、安裝MAMP" class="headerlink" title="一、安裝MAMP"></a>一、安裝MAMP</h2><p>官網：<a target="_blank" rel="noopener" href="https://www.mamp.info/en/downloads/">https://www.mamp.info/en/downloads/</a></p>
+<p>根據自己電腦的作業系統選擇下載，我自己是使用 M1 版本的 MacOS，所以選擇右上方下載。</p>
 <p><img src="/images/wordpress1.jpg" alt="wordpress"></p>
-<p>可以根據自己的需求安裝</p>
+<p>下載完成後就可以開始安裝 MAMP，這邊我跳過安裝流程，基本上只要一直按下一步就可以安裝完成。</p>
 <p><img src="/images/wordpress2.jpg" alt="wordpress"></p>
+<p>開啟MAMP</p>
+<p><img src="/images/wordpress3.jpg" alt="wordpress"></p>
+<p>設定端口</p>
+<p><img src="/images/wordpress4.jpg" alt="wordpress"></p>
+<p>接下來我們前往左上角的「Preferences」設定，開啟之後並選擇「Ports」，這邊可以自己設定端口，保持預設也可以，看自己的需求。<br>教學範例是使用預設的端口，並沒有做更改，如下圖。</p>
+<p><img src="/images/wordpress5.jpg" alt="wordpress"></p>
+<p>設定完成端口之後，回到 MAMP 主頁面，並按下右上方的「Start」按鈕啟用伺服器。<br>啟用之後，按一下「WebStart」開啟 MAMP 後台管理頁面，如下圖。</p>
+<p><img src="/images/wordpress6.jpg" alt="wordpress"></p>
+<p>前往 phpMyAdmin，</p>
+<p><img src="/images/wordpress7.jpg" alt="wordpress"></p>
+<p>左上角選擇「Tools→phpMyAdmin」選項，就可以進入資料庫設定頁面。</p>
 <h2 id="二、新建一個網站根目錄文件夾"><a href="#二、新建一個網站根目錄文件夾" class="headerlink" title="二、新建一個網站根目錄文件夾"></a>二、新建一個網站根目錄文件夾</h2><p>該文件夾用來存放我們接下來要下載的WordPress文件</p>
 <p><img src="/images/wordpress3.jpg" alt="wordpress"></p>
 <h2 id="三、PHPStudy創建網站"><a href="#三、PHPStudy創建網站" class="headerlink" title="三、PHPStudy創建網站"></a>三、PHPStudy創建網站</h2><h3 id="1-添加站點"><a href="#1-添加站點" class="headerlink" title="1.添加站點"></a>1.添加站點</h3><p><img src="/images/wordpress4.jpg" alt="wordpress"></p>
@@ -118,12 +129,37 @@
 <h3 id="3-確保nginx和mysql都啟動狀態"><a href="#3-確保nginx和mysql都啟動狀態" class="headerlink" title="3.確保nginx和mysql都啟動狀態"></a>3.確保nginx和mysql都啟動狀態</h3><p><img src="/images/wordpress6.jpg" alt="wordpress"></p>
 <p>現在瀏覽器打開我們設定好的域名就會看到我們的站點已經創建成功。</p>
 <p><img src="/images/wordpress7.jpg" alt="wordpress"></p>
-<h2 id="三、下載WordPress"><a href="#三、下載WordPress" class="headerlink" title="三、下載WordPress"></a>三、下載WordPress</h2><p>官網：</p>
+<p>更改數據庫語言</p>
+<p><img src="/images/wordpress15.jpg" alt="wordpress"></p>
+<p>接下來我們必須要建立一個給 WordPress 所使用的數據庫，名稱可以自取，以英文為主，方便自己辨識就可以了。</p>
+<p><img src="/images/wordpress16.jpg" alt="wordpress"></p>
+<p>再來就是必須要建立一個使用者帳戶，專門來管理與使用剛剛所建立的 WordPress 數據庫。</p>
+<p><img src="/images/wordpress17.jpg" alt="wordpress"></p>
+<p>帳號、密碼都自己設定，記得中間的主機名稱要選「localhost」。<br>在最下方的「全域權限」，把全部的選項都打勾，這樣該帳號才有最高的權限，沒問題就按下「執行」按鈕，就會開始建立囉。</p>
+<p><img src="/images/wordpress18.jpg" alt="wordpress"></p>
+<h2 id="三、下載WordPress"><a href="#三、下載WordPress" class="headerlink" title="三、下載WordPress"></a>三、下載WordPress</h2><h3 id="1-官網下載：https-wordpress-org"><a href="#1-官網下載：https-wordpress-org" class="headerlink" title="1.官網下載：https://wordpress.org/"></a>1.官網下載：<a target="_blank" rel="noopener" href="https://wordpress.org/">https://wordpress.org/</a></h3><p><img src="/images/wordpress8.jpg" alt="wordpress"></p>
+<p><img src="/images/wordpress9.jpg" alt="wordpress"></p>
+<h3 id="2-解壓下載的壓縮包"><a href="#2-解壓下載的壓縮包" class="headerlink" title="2.解壓下載的壓縮包"></a>2.解壓下載的壓縮包</h3><p><img src="/images/wordpress10.jpg" alt="wordpress"></p>
+<h3 id="3-把解壓的文件夹重命名我们的域名"><a href="#3-把解壓的文件夹重命名我们的域名" class="headerlink" title="3.把解壓的文件夹重命名我们的域名"></a>3.把解壓的文件夹重命名我们的域名</h3><p><img src="/images/wordpress11.jpg" alt="wordpress"></p>
+<p>在資料夾命名完成後，把他複製放到 MAMP 資料庫的路徑(htdocs)，路徑在主程式介面有顯示，如下圖(中間的 Document root)。</p>
+<p><img src="/images/wordpress19.jpg" alt="wordpress"></p>
+<p><img src="/images/wordpress20.jpg" alt="wordpress"></p>
+<h2 id="四、安裝WordPress"><a href="#四、安裝WordPress" class="headerlink" title="四、安裝WordPress"></a>四、安裝WordPress</h2><p>瀏覽器打開域名:<a target="_blank" rel="noopener" href="http://localhost:8888/jscnote.com">http://localhost:8888/jscnote.com</a></p>
+<p><img src="/images/wordpress13.jpg" alt="wordpress"></p>
+<p><img src="/images/wordpress21.jpg" alt="wordpress"></p>
+<p>再來需要創建一組登入「WordPress 後台」的帳號密碼，也可以順便幫網站取個名字，之後就可以點擊「安裝 WordPress」按鈕開始正式安裝流程。</p>
+<p><img src="/images/wordpress22.jpg" alt="wordpress"></p>
+<p>登入之後，WordPress就正式的建立完成。</p>
+<p><img src="/images/wordpress23.jpg" alt="wordpress"></p>
+<p>输入用户名、密码登陆后台</p>
+<p><img src="/images/wordpress24.jpg" alt="wordpress"></p>
+<p><img src="/images/wordpress25.jpg" alt="wordpress"></p>
+<p>以上就是我如何在Mac本地搭建WordPress的学习过程分享给大家，希望每天都能进步一点点。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/28/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAwordpress/" data-id="clc7qi6s30004fls6aowk70vc" data-title="如何本地搭建WordPress" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/28/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAwordpress/" data-id="clc8wwsbl0005szs61j5vahpj" data-title="Mac本地搭建WordPress" class="article-share-link">Share</a>
       
       
       
@@ -232,7 +268,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/27/GitHub-Pages-Hexo%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="clc7qi6s30003fls65736b6w6" data-title="GitHub Pages + Hexo如何搭建个人博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/27/GitHub-Pages-Hexo%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="clc8wwsbh0001szs69twb7r1w" data-title="GitHub Pages + Hexo如何搭建个人博客" class="article-share-link">Share</a>
       
       
       
@@ -283,7 +319,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/27/hello-world/" data-id="clc7qi6s10001fls6hwzh4lfg" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/27/hello-world/" data-id="clc8wwsbk0003szs6gkpzhmp7" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -333,7 +369,7 @@
       <ul>
         
           <li>
-            <a href="/2022/12/28/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAwordpress/">如何本地搭建WordPress</a>
+            <a href="/2022/12/28/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BAwordpress/">Mac本地搭建WordPress</a>
           </li>
         
           <li>
