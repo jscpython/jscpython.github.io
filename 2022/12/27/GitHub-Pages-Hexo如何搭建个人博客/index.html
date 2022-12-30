@@ -6,12 +6,12 @@
   
   <title>GitHub Pages + Hexo如何搭建个人博客 | jsc的学习笔记</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="我是小白程序媛，之前学的东西都是非常碎片化的，哪里不懂找哪里，课程视频也看不少，就是没有真正的记录下来，到下一次要用的时候又把知识点给忘了，又得从新找，浪费很多时间，现在开始，搭建一个自己的博客来记录自己的学习过程。 先从免费搭建个人博客开始，这里我用的是GitHub Pages + Hexo。 一．什么是Hexo？Hexo是一个开源的静态博客生成器，它使用Node.js开发，可以快速创建个人博客">
+  <meta name="description" content="我是小白程序媛，之前学的东西都是非常碎片化的，哪里不懂找哪里，课程视频也看不少，就是没有真正的记录下来，到下一次要用的时候又把知识点给忘了，又得从新找，浪费很多时间，现在开始，搭建一个自己的博客来记录自己的学习过程。 先从免费搭建个人博客开始，这里我用的是GitHub Pages + Hexo。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHub Pages + Hexo如何搭建个人博客">
 <meta property="og:url" content="http://example.com/2022/12/27/GitHub-Pages-Hexo%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="jsc的学习笔记">
-<meta property="og:description" content="我是小白程序媛，之前学的东西都是非常碎片化的，哪里不懂找哪里，课程视频也看不少，就是没有真正的记录下来，到下一次要用的时候又把知识点给忘了，又得从新找，浪费很多时间，现在开始，搭建一个自己的博客来记录自己的学习过程。 先从免费搭建个人博客开始，这里我用的是GitHub Pages + Hexo。 一．什么是Hexo？Hexo是一个开源的静态博客生成器，它使用Node.js开发，可以快速创建个人博客">
+<meta property="og:description" content="我是小白程序媛，之前学的东西都是非常碎片化的，哪里不懂找哪里，课程视频也看不少，就是没有真正的记录下来，到下一次要用的时候又把知识点给忘了，又得从新找，浪费很多时间，现在开始，搭建一个自己的博客来记录自己的学习过程。 先从免费搭建个人博客开始，这里我用的是GitHub Pages + Hexo。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/hexo1.png">
 <meta property="og:image" content="http://example.com/images/hexo2.png">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="http://example.com/images/hexo15.png">
 <meta property="og:image" content="http://example.com/images/hexo16.png">
 <meta property="article:published_time" content="2022-12-27T08:44:56.000Z">
-<meta property="article:modified_time" content="2022-12-28T14:10:06.403Z">
+<meta property="article:modified_time" content="2022-12-30T08:57:57.453Z">
 <meta property="article:author" content="jsc">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/hexo1.png">
@@ -122,6 +122,8 @@
       
         <p>我是小白程序媛，之前学的东西都是非常碎片化的，哪里不懂找哪里，课程视频也看不少，就是没有真正的记录下来，到下一次要用的时候又把知识点给忘了，又得从新找，浪费很多时间，现在开始，搭建一个自己的博客来记录自己的学习过程。</p>
 <p>先从免费搭建个人博客开始，这里我用的是GitHub Pages + Hexo。</p>
+<span id="more"></span>
+
 <h2 id="一．什么是Hexo？"><a href="#一．什么是Hexo？" class="headerlink" title="一．什么是Hexo？"></a>一．什么是Hexo？</h2><p>Hexo是一个开源的静态博客生成器，它使用Node.js开发，可以快速创建个人博客或网站。Hexo使用Markdown语言编写博客内容，并且提供了丰富的插件和主题来自定义博客的外观和功能。Hexo的优点在于，它的使用非常简单，可以快速生成静态网站，并且有很多主题和插件可供选择，方便博客的自定义。在<a target="_blank" rel="noopener" href="https://hexo.io/themes/%E8%BF%98%E5%8F%AF%E4%BB%A5%E8%87%AA%E5%B7%B1%E9%80%89%E6%8B%A9%E5%96%9C%E6%AC%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E6%A1%86%E6%9E%B6%EF%BC%8C%E6%88%91%E8%BF%99%E9%87%8C%E5%B0%B1%E9%80%89%E6%8B%A9%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84%E3%80%82">https://hexo.io/themes/还可以自己选择喜欢的主题框架，我这里就选择最简单的。</a></p>
 <h2 id="二．环境配置"><a href="#二．环境配置" class="headerlink" title="二．环境配置"></a>二．环境配置</h2><h3 id="1、安装Node-js"><a href="#1、安装Node-js" class="headerlink" title="1、安装Node.js"></a>1、安装Node.js</h3><p>Hexo是基于Node.js开发的，因此我们要先安装Node.js</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
@@ -191,7 +193,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/27/GitHub-Pages-Hexo%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="clcaa37qk0001s0s68gan4bwm" data-title="GitHub Pages + Hexo如何搭建个人博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/27/GitHub-Pages-Hexo%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="clcaa9j5v0001gis68pk517fc" data-title="GitHub Pages + Hexo如何搭建个人博客" class="article-share-link">Share</a>
       
       
       
@@ -210,11 +212,6 @@
       </div>
     </a>
   
-  
-    <a href="/2022/12/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
   
 </nav>
 
